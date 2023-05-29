@@ -9,3 +9,6 @@
     color: #FFF;
     margin: 16px 0;
 }
+.button:hover {
+    color: #95FFD4
+}
