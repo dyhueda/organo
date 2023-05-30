@@ -5,7 +5,6 @@ import './Form.css'
 import { useState } from 'react'
 
 function Form(props) {
-    const items = ['Programing','Front-End','Data Science', 'DevOps', 'UX e Design', 'Mobile']
 
     const [name, setName] = useState('')
     const [role, setRole] = useState('')
@@ -20,6 +19,10 @@ function Form(props) {
             image,
             team
         })
+        setName('')
+        setImage('')
+        setRole('')
+        setTeam('')
     }
     return (
 
@@ -30,6 +33,7 @@ function Form(props) {
                     needed={true} 
                     label='Name' 
                     placeholder='Enter your name'
+                    value={name}
                     WhenChange={value => setName(value)} 
                 />
                     
@@ -37,18 +41,21 @@ function Form(props) {
                     needed={true} 
                     label='Role' 
                     placeholder='Enter your role'
+                    value={role}
                     WhenChange={value => setRole(value)} 
                 />
                 <TextField 
                     label='Image' 
                     placeholder='Enter the adress of your image' 
                     WhenChange={value => setImage(value)}
+                    value={image}
                 />
                 <Dropdown 
                     nedded={true} 
-                    items={items} 
+                    items={props.teams} 
                     label='Team'
                     WhenChange={value => setTeam(value)}
+                    value={team}
                 />
                 <Button>
                     Create Profile

@@ -7,8 +7,13 @@ function Dropdown (props) {
             <select 
                 onChange={event =>props.WhenChange(event.target.value)} 
                 required={props.needed} 
-                value={props.value}>
-                {props.items.map(item => <option key={item}>{item}</option>)}
+                value={props.value}
+            >
+                <option value={''} ></option>
+
+                {props.items.map(item => {
+                    return <option key={item}>{item}</option>
+                })}
             </select>
         </div>
 
