@@ -1,3 +1,7 @@
+Project created by Alura and developed by Diego Ueda
+Based on [Figma](https://www.figma.com/file/T6BLI1HfB81eYOiVgpqQz7/Projeto-Intro-ao-React?type=design&node-id=176-977&t=KNkc55veLhPJK6vl-0)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
